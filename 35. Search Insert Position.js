@@ -17,3 +17,9 @@ var searchInsert = function(nums, target) {
      } 
     return left
 };
+
+
+//WTF
+var searchInsert = function(nums, target) {
+    return nums.includes(target) ? nums.indexOf(target) : nums.filter(elem => elem < target).length;
+};
